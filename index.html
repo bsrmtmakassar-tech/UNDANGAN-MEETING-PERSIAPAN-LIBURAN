@@ -1,0 +1,127 @@
+<html style="margin:0;padding:0;">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{
+  --bg:#fef9e7; --card:#ffffff; --text:#1e293b;
+  --biru:#0284c7; --tosca:#0d9488; --kuning:#f59e0b; --merah:#ef4444;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Fredoka',sans-serif;background:linear-gradient(135deg,#fef9e7,#e0f2fe);color:var(--text)}
+.pamflet{
+  width:100%;
+  max-width:600px;
+  margin:0 auto;
+  aspect-ratio:10:14;
+  background:#fff;
+  border-radius:24px;
+  border:4px solid var(--kuning);
+  box-shadow:0 12px 35px rgba(245,158,11,.25);
+  padding:28px 24px;
+  position:relative;overflow:hidden;
+}
+.hiasan{position:absolute;pointer-events:none}
+.judul{
+  font-size:32px;font-weight:700;
+  background:linear-gradient(90deg,var(--biru),var(--tosca));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  line-height:1.2;
+}
+.subjudul{font-size:18px;color:var(--kuning);font-weight:600;margin-top:8px}
+.info-box{
+  background:linear-gradient(135deg,#f0f9ff,#fef9e7);
+  border:2px solid #fde68a;
+  border-radius:16px;
+  padding:18px;
+  margin-top:20px;
+}
+.info-item{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.info-item:last-child{margin-bottom:0}
+.icon{font-size:24px;width:32px;text-align:center}
+.teks-info{font-size:16px;line-height:1.5}
+.tombol{
+  display:inline-block;
+  margin-top:24px;
+  padding:14px 28px;
+  background:linear-gradient(90deg,var(--biru),var(--tosca));
+  color:#fff;
+  font-weight:600;
+  font-size:16px;
+  border-radius:999px;
+  text-decoration:none;
+  box-shadow:0 6px 18px rgba(2,132,199,.35);
+}
+.catatan{
+  margin-top:18px;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.6;
+}
+.footer{
+  position:absolute;
+  bottom:18px;
+  left:0;
+  right:0;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+</style>
+<div class="pamflet">
+  <div class="hiasan" style="top:12px;left:18px;font-size:28px">📢</div>
+  <div class="hiasan" style="top:10px;right:20px;font-size:30px">🗓️</div>
+  <div class="hiasan" style="bottom:50px;left:20px;font-size:24px">💙</div>
+  <div class="hiasan" style="bottom:50px;right:20px;font-size:24px">🌴</div>
+
+  <div style="text-align:center;margin-bottom:24px">
+    <div style="font-size:52px;margin-bottom:8px">🤝</div>
+    <div class="judul">UNDANGAN MEETING</div>
+    <div class="subjudul">RAPAT PERSIAPAN LIBURAN PANAMBUNGAN</div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-item">
+      <span class="icon">📅</span>
+      <div class="teks-info">
+        <strong>Hari/Tanggal:</strong> Hari Ini, Jumat<br>
+        <small style="color:var(--muted)">*sesuaikan dengan tanggal hari ini</small>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <span class="icon">⏰</span>
+      <div class="teks-info">
+        <strong>Waktu:</strong> 11.00 Wita<br>
+        <small style="color:var(--muted)">Mohon datang 5 menit lebih awal untuk persiapan</small>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <span class="icon">📍</span>
+      <div class="teks-info">
+        <strong>Tempat:</strong> Ruangan Meeting Makassar Utara<br>
+        <small style="color:var(--muted)">Silakan masuk ke ruangan yang sudah disediakan</small>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <span class="icon">🎯</span>
+      <div class="teks-info">
+        <strong>Agenda:</strong> Pembahasan Panitia, Anggaran, Keuangan, Jadwal, dan Aturan Liburan Panambungan
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center">
+    <div class="tombol">WAJIB HADIR YA SEMUA! 💙</div>
+  </div>
+
+  <div class="catatan" style="text-align:center">
+    <strong>Catatan:</strong> Mohon bawa catatan kecil dan siapkan pertanyaan atau masukan ya. Kita bahas bersama agar liburan nanti makin seru dan lancar! 🌴
+  </div>
+
+  <div class="footer">
+    Undangan Rapat Panitia Panambungan | Dibagikan hari ini
+  </div>
+</div>
+</html>
